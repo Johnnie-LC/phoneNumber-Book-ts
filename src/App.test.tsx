@@ -14,8 +14,6 @@ suite('App', () => {
 
   test('renders the app header', () => {
     const { getByText } = renderApp()
-    screen.debug()
-
     expect(getByText('PhoneNumber Book App')).toBeDefined()
   })
 
@@ -62,7 +60,6 @@ suite('App', () => {
     // Realiza una búsqueda vacía
     const searchButton = screen.getByText('Search')
     await user.click(searchButton)
-    screen.debug()
     // Verifica que todos los contactos se muestren
     expect(screen.getAllByText('Sam Wickle').length).toBe(2)
     expect(screen.getAllByText('Lickov Volst').length).toBe(2)
