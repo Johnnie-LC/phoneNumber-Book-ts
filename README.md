@@ -43,3 +43,13 @@ run locally
 ```js
    npm run dev
 ```
+
+run test   
+```js
+   npm run test
+```
+
+run test coverage   
+```js
+   npm run coverage
+```
